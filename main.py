@@ -4,7 +4,7 @@ from langchain_openai import LangchainOpenAIChatBot
 
 
 # A OpenAI powered chatbot built using Langchain.
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "YOUR API KEY"
 bot = LangchainOpenAIChatBot(OPENAI_API_KEY=OPENAI_API_KEY)
 
 # The following is setup code that is required to host with modal.com
@@ -22,6 +22,6 @@ def fastapi_app():
     # but the starter example disables the key check for convenience.
     # 3. You can also store your access key on modal.com and retrieve it in this function
     # by following the instructions at: https://modal.com/docs/guide/secrets
-    POE_ACCESS_KEY = "mkPxVPCPLoWBkFy6hLNnlWYPiBMlBKZt"
+    POE_ACCESS_KEY = "YOUR ACCESS KEY"
     app = make_app(bot, access_key=POE_ACCESS_KEY)
     return app
